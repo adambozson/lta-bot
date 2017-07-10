@@ -12,6 +12,6 @@ showNextTram = (robot, res) ->
     res.reply result   
 
 module.exports = (robot) ->
-  robot.hear /when is the next tram/i, (res) ->
+  robot.hear /when is the next tram|when the next tram is/i, (res) ->
     showNextTram robot, res
     
