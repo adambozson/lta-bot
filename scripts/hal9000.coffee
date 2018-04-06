@@ -22,3 +22,6 @@ module.exports = (robot) ->
 
     robot.hear /hype/i, (res) ->
         res.send "GET FUCKING HYPE!"
+
+    robot.hear /(.*)/i, (res) ->
+    	res.reply "Adam smells of damp trainers."
